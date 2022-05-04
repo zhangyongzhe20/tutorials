@@ -17,6 +17,7 @@ public class ThreadA extends Thread{
                     }
 //                    for(int i =0; i<nums; i++)
                         System.out.print("A");
+//                    before release lock, set the flag for next thread
                     lock.flag=2;
                     lock.notifyAll();
                 }

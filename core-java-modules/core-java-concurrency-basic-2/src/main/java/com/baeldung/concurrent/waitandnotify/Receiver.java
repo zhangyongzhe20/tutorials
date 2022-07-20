@@ -17,12 +17,12 @@ public class Receiver implements Runnable {
             System.out.println(receivedMessage);
 
             //Thread.sleep() to mimic heavy server-side processing
-            try {
-                Thread.sleep(ThreadLocalRandom.current().nextInt(1000, 5000));
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt(); 
-                System.out.println("Thread Interrupted");
-            }
+//            try {
+//                Thread.sleep(ThreadLocalRandom.current().nextInt(1000, 5000));
+//            } catch (InterruptedException e) {
+//                Thread.currentThread().interrupt();
+//                System.out.println("Thread Interrupted");
+//            }
         }
     }
 }

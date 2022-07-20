@@ -11,7 +11,7 @@ public class ApplicationContextTestInjectName {
 
     @Bean
     public ArbitraryDependency yetAnotherFieldInjectDependency() {
-        ArbitraryDependency yetAnotherFieldInjectDependency = new YetAnotherArbitraryDependency();
-        return yetAnotherFieldInjectDependency;
+        ArbitraryDependency yyyyyetAnotherFieldInjectDependency = new YetAnotherArbitraryDependency();
+        return yyyyyetAnotherFieldInjectDependency;
     }
 }

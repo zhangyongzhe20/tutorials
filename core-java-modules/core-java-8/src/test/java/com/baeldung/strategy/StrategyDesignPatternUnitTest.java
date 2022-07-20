@@ -2,6 +2,8 @@ package com.baeldung.strategy;
 
 import org.junit.Test;
 
+import javax.sound.midi.SysexMessage;
+
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
@@ -18,6 +20,7 @@ public class StrategyDesignPatternUnitTest {
         Discounter staffDiscounter = new EasterDiscounter();
 
         final BigDecimal discountedValue = staffDiscounter
+                // call the interface of Discounter
           .apply(BigDecimal.valueOf(100));
 
         assertThat(discountedValue)
@@ -61,7 +64,7 @@ public class StrategyDesignPatternUnitTest {
           .stream()
           .reduce(v -> v, Discounter::combine);
 
-        combinedDiscounter.apply(amount);
+        System.out.println(combinedDiscounter.apply(amount));
     }
 
     @Test

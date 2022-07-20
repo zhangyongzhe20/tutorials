@@ -15,7 +15,7 @@ import com.baeldung.wiring.configuration.ApplicationContextTestAutowiredType;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(
-  loader = AnnotationConfigContextLoader.class,
+//  loader = AnnotationConfigContextLoader.class,
   classes = ApplicationContextTestAutowiredType.class)
 public class FieldAutowiredIntegrationTest {
 
